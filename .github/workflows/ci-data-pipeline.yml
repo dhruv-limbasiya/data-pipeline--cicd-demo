@@ -49,11 +49,11 @@ jobs:
 
       - name: Package Lambda
         run: |
-          cd etl_customer
+          cd lambda/etl_customer
           zip -r lambda.zip .
 
       - name: Deploy Lambda
         run: |
           aws lambda update-function-code \
           --function-name customer-transform \
-          --zip-file fileb://lambda_etl_customer/lambda.zip
+          --zip-file fileb://lambda/etl_customer/lambda.zip
