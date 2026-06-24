@@ -46,3 +46,14 @@ jobs:
 
       - name: Verify AWS Connection
         run: aws sts get-caller-identity
+
+      - name: Package Lambda
+        run: |
+          cd lambda_etl_customer
+          zip -r lambda.zip .
+
+      - name: Deploy Lambda
+        run: |
+          aws lambda update-function-code \
+          --function-name customer-transform \
+          --zip-file fileb://lambda_etl_customer/lambda.zip
