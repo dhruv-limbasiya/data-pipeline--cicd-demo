@@ -28,4 +28,4 @@ scripts/                                 # Optional CLI setup
 ```
 git push main → GitHub Actions (CI) + CodePipeline (CD)
 CodePipeline: Source → CodeBuild → Lambda Deploy (alias prod)
-```
+````
