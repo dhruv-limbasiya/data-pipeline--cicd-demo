@@ -35,7 +35,7 @@ def lambda_handler(event, context):
         "statusCode": 200,
         "body": json.dumps(
             {
-                "message": "ETL completed successfully",
+                "message": "ETL completed successfully - 2026-06-24",
                 "bucket": bucket,
                 "key": key,
                 "records_written": records_written,
