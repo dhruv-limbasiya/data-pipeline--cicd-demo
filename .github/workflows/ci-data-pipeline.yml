@@ -3,12 +3,7 @@ name: CI - Data Pipeline
 on:
   push:
     branches: [master, develop]
-    paths:
-      - 'lambda_etl_customer/**'
-      - 'tests/**'
-      - '.github/workflows/**'
-      - 'requirements-dev.txt'
-      - 'buildspec.yml'
+
   pull_request:
     branches: [master, develop]
 
