@@ -14,7 +14,7 @@ ETL Lambda (S3 → DynamoDB) with GitHub Actions CI and AWS CodePipeline CD.
 
 ## Repo structure
 
-```
+````
 .github/workflows/ci-data-pipeline.yml   # CI: lint + pytest
 buildspec.yml                            # CD: CodeBuild steps
 lambda/etl_customer/                     # Lambda source
