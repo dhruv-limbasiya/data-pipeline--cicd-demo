@@ -49,7 +49,7 @@ jobs:
 
       - name: Package Lambda
         run: |
-          cd lambda_etl_customer
+          cd etl_customer
           zip -r lambda.zip .
 
       - name: Deploy Lambda
