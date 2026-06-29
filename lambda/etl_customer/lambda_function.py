@@ -11,7 +11,6 @@ S3_BUCKET = os.environ.get("S3_BUCKET", "testingrawdata")
 S3_KEY = os.environ.get("S3_KEY", "data-etl-test1/customer.csv")
 DYNAMODB_TABLE = os.environ.get("DYNAMODB_TABLE", "etl-test")
 
-
 def lambda_handler(event, context):
     s3 = boto3.client("s3")
     dynamodb = boto3.resource("dynamodb")
